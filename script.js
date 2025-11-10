@@ -1,7 +1,7 @@
 
 const API_URL = 'https://api-token-keur.onrender.com/'; 
 const AUTO_REFRESH_INTERVAL_MS = 10_000; 
-const FETCH_TIMEOUT_MS = 30_000; 
+const FETCH_TIMEOUT_MS = 300_000; 
 
 
 function padCode(code) {

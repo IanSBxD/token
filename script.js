@@ -22,7 +22,6 @@ async function fetchCode() {
 	const statusEl = document.getElementById('status');
 	const codeEl = document.getElementById('code');
 
-	// Se API_URL não estiver configurada, não geramos código aleatório.
 	if (!API_URL) {
 		if (codeEl) codeEl.textContent = '----';
 		if (statusEl) statusEl.textContent = 'API_URL não configurada — configure a URL em script.js';

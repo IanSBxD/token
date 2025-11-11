@@ -28,7 +28,7 @@ async function fetchCode() {
 		return;
 	}
 
-	if (statusEl) statusEl.textContent = 'Solicitando código...';
+	if (statusEl) statusEl.textContent = 'Solicitando Token...';
 
 	try {
 		const res = await fetchWithTimeout(API_URL, { method: 'GET' });
@@ -39,7 +39,7 @@ async function fetchCode() {
 		if (code === undefined || code === null) throw new Error('Resposta sem código');
 
 		if (codeEl) codeEl.textContent = padCode(code);
-		if (statusEl) statusEl.textContent = 'Código obtido com sucesso';
+		if (statusEl) statusEl.textContent = '⬆️token⬆️';
 	} catch (err) {
 		console.error(err);
 		if (codeEl) codeEl.textContent = '----';
